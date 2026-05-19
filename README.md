@@ -25,12 +25,13 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 http://127.0.0.1:8000 is my local host URL
 
 ## 4. Paste into browser
-### * <LOCAL HOST URL>/docs
 
+### Open interface
+<LOCAL HOST URL>/docs
+*   Click on GET
+*   Click on Try It Out
+*   Paste imageUrl
+*   lick on Execute
 
-4. Paste into browser <YOUR LINK>/docs
-   Click on GET
-   Click on Try It Out
-   Paste imageUrl
-   Click on Execute
-6. OR <YOUR LINK>/google-lens?imageUrl=<imageUrl>
+### Directly use API endpoint
+<LOCAL HOST URL>/google-lens?imageUrl=<imageUrl>
