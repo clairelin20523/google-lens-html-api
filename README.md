@@ -14,7 +14,7 @@ Built using FastAPI and Playwright.
 
 ## Hosted API link
 https://unweave-commotion-slightly.ngrok-free.dev/docs \
-or insert imageUrl directly \
+or use imageUrl directly in link \
 https://unweave-commotion-slightly.ngrok-free.dev/google-lens?imageUrl= &lt;imageUrl&gt;
 
 ## Setup and test API locally
@@ -55,5 +55,24 @@ http://127.0.0.1:8000/google-lens?imageUrl=https://picsum.photos/300/300
 ##### Returns the raw HTML string of the Google Lens Exact Match results page:
 *<!DOCTYPE html><html itemscope="" itemtype="http://schema.org/SearchResultsPage" lang="en"><head><meta charset="UTF-8"><meta content="origin" name="referrer"><link href="//www.gstatic.com/images/branding/searchlogo/ico/favicon.ico" rel="icon"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google Search</title><script nonce="">window._hst=Date.now();</script><script nonce="">(function(){var _g={kEI:'fxcMavbZBs-ymtkPw6qTmQE',kEXPI:'31',kBL:'4PWo',kOPI:89978449};(function(){var a;((a=window.google)==null?0:a.stvsc)?google.kEI=_g.kEI:window.google=_g;}).call(this);})();(function(){google.sn='web';google.kHL='en';google.usb=false;})();(function(){*...
 
-## Approach
+## Steps
 
+1. Encode string parameter imageUrl
+2. Append encoded URL to end of direct Google Lens upload link
+3. Opens chrome browser page
+4. Navigate to appended URL
+5. Click on Exact Matches tab
+6. Wait for everything to load
+7. Obtain page content/full raw HTML
+8. Close chrome browser page
+9. Return HTML
+
+## Design choices
+* Encoding `imageUrl` into a safe format can avoid system confusion with possibly conflicting characters for more accurate results
+* Navigating to the appended URL directly avoids additional manual clicks that can trigger anti-bot systems
+* Using `await` at each step from `async` for non-blocking execution: run asynchronously for efficiency and scalability
+* Using `Stealth` from `playwright` can bypass bot detection by fixing browser-level detection signals
+* Using `launch_persistent_context` to launch browser that uses persistent storage located at `user_data_dir`, using profile to open browser makes it look like real user to prevent bot detection
+* Set `headless = False` to ensure that it opens a read browser instead of running in the background, also to look more human
+* Set `args = ["--disable-blink-features=AutomationControlled"]` manually turns off a certain parameter that flags automation also to look more human
+*  Use `await page.wait_for_load_state("networkidle")` to wait for Exact Matches page to fully load before obtaining the HTML for accuracy
