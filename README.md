@@ -14,6 +14,8 @@ Built using FastAPI and Playwright.
 
 ## Hosted API link
 https://unweave-commotion-slightly.ngrok-free.dev/docs
+or insert imageUrl directly
+https://unweave-commotion-slightly.ngrok-free.dev/google-lens?imageUrl=&lt;imageUrl&gt;
 
 ## Setup and test API locally
 *Download main.py and open terminal in the same directory*
