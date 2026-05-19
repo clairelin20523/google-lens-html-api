@@ -47,6 +47,8 @@ with imageUrl = https://picsum.photos/300/300
 #### b. Directly use API endpoint
 http://127.0.0.1:8000/google-lens?imageUrl=https://picsum.photos/300/300
 
-##### Returns the raw HTML string of the Google Lens Exact Match results page
+##### Returns the raw HTML string of the Google Lens Exact Match results page:
 *<!DOCTYPE html><html itemscope="" itemtype="http://schema.org/SearchResultsPage" lang="en"><head><meta charset="UTF-8"><meta content="origin" name="referrer"><link href="//www.gstatic.com/images/branding/searchlogo/ico/favicon.ico" rel="icon"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google Search</title><script nonce="">window._hst=Date.now();</script><script nonce="">(function(){var _g={kEI:'fxcMavbZBs-ymtkPw6qTmQE',kEXPI:'31',kBL:'4PWo',kOPI:89978449};(function(){var a;((a=window.google)==null?0:a.stvsc)?google.kEI=_g.kEI:window.google=_g;}).call(this);})();(function(){google.sn='web';google.kHL='en';google.usb=false;})();(function(){*...
+
+## Approach
 
