@@ -5,7 +5,7 @@ Built using FastAPI and Playwright.
 
 ## API Endpoint
 ### GET /google-lens
-*Response:* The raw HTML string of the Google Lens Exact Match results page.
+**Response:** The raw HTML string of the Google Lens Exact Match results page.
 
 1. Download main.py
 2. In the same directory as the saved file, open terminal and run: uvicorn main:app --reload
