@@ -12,12 +12,22 @@ Built using FastAPI and Playwright.
 |------|------|-------------|
 |imageUrl|str|Full & direct URL of the image to search|
 
+*Download main.py and open terminal in the same directory*
+
 ## 1. Install dependencies
 `pip install fastapi uvicorn playwright playwright-stealth`
 
-1. Download main.py
-2. In the same directory as the saved file, open terminal and run: uvicorn main:app --reload
-3. Find the <YOUR LINK> something like: http://127.0.0.1:8000
+## 2. Run the API locally
+`uvicorn main:app --reload`
+
+## 3. Locate local host URL in the output
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+http://127.0.0.1:8000 is my local host URL
+
+## 4. Paste into browser
+* ### <LOCAL HOST URL>/docs
+
+
 4. Paste into browser <YOUR LINK>/docs
    Click on GET
    Click on Try It Out
