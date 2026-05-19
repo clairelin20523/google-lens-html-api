@@ -21,17 +21,17 @@ Built using FastAPI and Playwright.
 `uvicorn main:app --reload`
 
 ## 3. Locate local host URL in the output
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-http://127.0.0.1:8000 is my local host URL
+*INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)*
+http://127.0.0.1:8000 = &lt;LOCAL HOST URL&gt;
 
 ## 4. Paste into browser
 
-### Open interface
+### a. Open interface, OR
 &lt;LOCAL HOST URL&gt;/docs
 *   Click on GET
 *   Click on Try It Out
 *   Paste imageUrl
 *   lick on Execute
 
-### Directly use API endpoint
+### b. Directly use API endpoint
 &lt;LOCAL HOST URL&gt;/google-lens?imageUrl=<imageUrl>
