@@ -34,4 +34,4 @@ http://127.0.0.1:8000 = &lt;LOCAL HOST URL&gt;
 *   lick on Execute
 
 ### b. Directly use API endpoint
-&lt;LOCAL HOST URL&gt;/google-lens?imageUrl=&ltimageUrl&gt;
+&lt;LOCAL HOST URL&gt;/google-lens?imageUrl=&lt;imageUrl&gt;
