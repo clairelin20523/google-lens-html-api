@@ -13,8 +13,8 @@ Built using FastAPI and Playwright.
 |imageUrl|str|Full & direct URL of the image to search|
 
 ## Hosted API link
-https://unweave-commotion-slightly.ngrok-free.dev/docs
-or insert imageUrl directly
+https://unweave-commotion-slightly.ngrok-free.dev/docs \
+or insert imageUrl directly \
 https://unweave-commotion-slightly.ngrok-free.dev/google-lens?imageUrl=&lt;imageUrl&gt;
 
 ## Setup and test API locally
