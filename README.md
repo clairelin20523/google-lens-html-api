@@ -7,7 +7,7 @@ Built using FastAPI and Playwright.
 ### GET /google-lens
 **Response:** The raw HTML string of the Google Lens Exact Match results page.
 
-## Query Parameter
+### Query Parameter
 | Name | Type | Description |
 |------|------|-------------|
 |imageUrl|str|Full & direct URL of the image to search|
@@ -27,11 +27,11 @@ http://127.0.0.1:8000 is my local host URL
 ## 4. Paste into browser
 
 ### Open interface
-<LOCAL HOST URL>/docs
+&lt;LOCAL HOST URL&gt;/docs
 *   Click on GET
 *   Click on Try It Out
 *   Paste imageUrl
 *   lick on Execute
 
 ### Directly use API endpoint
-<LOCAL HOST URL>/google-lens?imageUrl=<imageUrl>
+&lt;LOCAL HOST URL&gt;/google-lens?imageUrl=<imageUrl>
