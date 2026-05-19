@@ -1,7 +1,7 @@
 # Google Lens HTML API
 This API  performs a Google Lens search (with image URL), returning the full HTML text of the Exact Match results page.
 
-Built using FastAPI and Playwright.
+Built using `FastAPI` & `Playwright`
 
 ### API Endpoint
 #### GET /google-lens
