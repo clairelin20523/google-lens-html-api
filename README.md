@@ -12,6 +12,9 @@ Built using FastAPI and Playwright.
 |------|------|-------------|
 |imageUrl|str|Full & direct URL of the image to search|
 
+## Hosted API link
+https://unweave-commotion-slightly.ngrok-free.dev/docs
+
 ## Setup and test API locally
 *Download main.py and open terminal in the same directory*
 
