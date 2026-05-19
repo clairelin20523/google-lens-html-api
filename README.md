@@ -7,6 +7,11 @@ Built using FastAPI and Playwright.
 ### GET /google-lens
 **Response:** The raw HTML string of the Google Lens Exact Match results page.
 
+## Query Parameter
+| Name | Type | Description |
+|------|------|-------------|
+|imageUrl|str|Full & direct URL of the image to search|
+
 1. Download main.py
 2. In the same directory as the saved file, open terminal and run: uvicorn main:app --reload
 3. Find the <YOUR LINK> something like: http://127.0.0.1:8000
