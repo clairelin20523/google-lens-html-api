@@ -22,6 +22,7 @@ Built using FastAPI and Playwright.
 
 ## 3. Locate local host URL in the output
 *INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)*
+
 http://127.0.0.1:8000 = &lt;LOCAL HOST URL&gt;
 
 ## 4. Paste into browser
