@@ -25,7 +25,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 http://127.0.0.1:8000 is my local host URL
 
 ## 4. Paste into browser
-* ### <LOCAL HOST URL>/docs
+### * <LOCAL HOST URL>/docs
 
 
 4. Paste into browser <YOUR LINK>/docs
