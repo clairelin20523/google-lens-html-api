@@ -12,6 +12,9 @@ Built using FastAPI and Playwright.
 |------|------|-------------|
 |imageUrl|str|Full & direct URL of the image to search|
 
+## 1. Install dependencies
+`pip install fastapi uvicorn playwright playwright-stealth`
+
 1. Download main.py
 2. In the same directory as the saved file, open terminal and run: uvicorn main:app --reload
 3. Find the <YOUR LINK> something like: http://127.0.0.1:8000
