@@ -76,7 +76,7 @@ http://127.0.0.1:8000/google-lens?imageUrl=https://picsum.photos/300/300
 * Set `headless = False` to ensure that it opens a read browser instead of running in the background, also to look more human
 * Set `args = ["--disable-blink-features=AutomationControlled"]` manually turns off a certain parameter that flags automation also to look more human
 *  Use `await page.wait_for_load_state("networkidle")` to wait for Exact Matches page to fully load before obtaining the HTML for accuracy
-*  Add random delays using `await asyncio.sleep(random.uniform(0.5, 2))` between actions to make it more human-like
+*  Add random delays using `asyncio.sleep` between actions to make it more human-like
 * **Catch errors**
   1. Check if `imageUrl` starts with `http`
   2. Catch errors within `Playwright`
