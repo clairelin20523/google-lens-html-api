@@ -78,6 +78,6 @@ http://127.0.0.1:8000/google-lens?imageUrl=https://picsum.photos/300/300
 *  Use `await page.wait_for_load_state("networkidle")` to wait for Exact Matches page to fully load before obtaining the HTML for accuracy
 *  Add random delays using `await asyncio.sleep(random.uniform(0.5, 2))` between actions to make it more human-like
 *  Catch errors
-1. Check if `imageUrl` start with `http`
-2. Catch error within `Playwright`
-3. Catch all other `Python` error
+  1. Check if `imageUrl` start with `http`
+  2. Catch error within `Playwright`
+  3. Catch all other `Python` error
