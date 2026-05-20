@@ -71,8 +71,13 @@ http://127.0.0.1:8000/google-lens?imageUrl=https://picsum.photos/300/300
 * Encoding `imageUrl` into a safe format can avoid system confusion with possibly conflicting characters for more accurate results
 * Navigating to the appended URL directly avoids additional manual clicks that can trigger anti-bot systems
 * Using `await` at each step from `async` for non-blocking execution: run asynchronously for efficiency and scalability
-* Using `Stealth` from `playwright` can bypass bot detection by fixing browser-level detection signals
+* Using `Stealth` from `Playwright` can bypass bot detection by fixing browser-level detection signals
 * Using `launch_persistent_context` to launch browser that uses persistent storage located at `user_data_dir`, using profile to open browser makes it look like real user to prevent bot detection
 * Set `headless = False` to ensure that it opens a read browser instead of running in the background, also to look more human
 * Set `args = ["--disable-blink-features=AutomationControlled"]` manually turns off a certain parameter that flags automation also to look more human
 *  Use `await page.wait_for_load_state("networkidle")` to wait for Exact Matches page to fully load before obtaining the HTML for accuracy
+*  Add random delays using `await asyncio.sleep(random.uniform(0.5, 2))` between actions to make it more human-like
+*  Catch errors
+1. Check if `imageUrl` start with `http`
+2. Catch error within `Playwright`
+3. Catch all other `Python` error
