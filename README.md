@@ -23,15 +23,18 @@ https://unweave-commotion-slightly.ngrok-free.dev/google-lens?imageUrl= &lt;imag
 ### 1. Install dependencies
 `pip install fastapi uvicorn playwright playwright-stealth`
 
-### 2. Run the API locally
+### 2. Install browser
+`playwright install chromium`
+
+### 3. Run the API locally
 `uvicorn main:app --reload`
 
-### 3. Locate local host URL in the output
+### 4. Locate local host URL in the output
 *INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)*
 
 http://127.0.0.1:8000 = &lt;LOCAL HOST URL&gt;
 
-### 4. Paste into browser
+### 5. Paste into browser
 
 #### a. Open interface, OR
 &lt;LOCAL HOST URL&gt;/docs
